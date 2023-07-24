@@ -1,0 +1,241 @@
+:root {
+  --status-color-blue: blue;
+  --status-color-orange: orange;
+  --status-color-red: red;
+  --status-color-darkred: darkred;
+  --status-color-green: green;
+  --status-color-hover-blue: lightblue;
+  --status-color-hover-orange: lightcoral;
+  --status-color-hover-red: salmon;
+  --status-color-hover-darkred: crimson;
+  --status-color-hover-green: lightgreen;
+}
+.status-tile {
+  &.status-tile-blue {
+    background-color: var(--status-color-blue);
+  }
+  &.status-tile-orange {
+    background-color: var(--status-color-orange);
+  }
+  &.status-tile-red {
+    background-color: var(--status-color-red);
+  }
+  &.status-tile-darkred {
+    background-color: var(--status-color-darkred);
+  }
+  &.status-tile-green {
+    background-color: var(--status-color-green);
+  }
+
+  &:hover {
+    &.status-tile-blue {
+      background-color: var(--status-color-hover-blue);
+    }
+    &.status-tile-orange {
+      background-color: var(--status-color-hover-orange);
+    }
+    &.status-tile-red {
+      background-color: var(--status-color-hover-red);
+    }
+    &.status-tile-darkred {
+      background-color: var(--status-color-hover-darkred);
+    }
+    &.status-tile-green {
+      background-color: var(--status-color-hover-green);
+    }
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(
+    10,
+    1fr
+  ); /* Adjust the number of columns as needed */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.rectangle {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.red {
+  background-color: red;
+}
+
+.darkred {
+  background-color: darkred;
+}
+.calendar-wrapper .react-calendar__tile .status-tile {
+  margin: 1rem;
+  /* background-color: red; */
+}
+.react-calendar {
+  /* background-color: red; */
+  /* height: 310px; */
+  border: 0;
+  width: 100%;
+}
+.default-color {
+  background-color: #65c971;
+  color: transparent;
+  margin: 1rem;
+}
+.default-color:enabled:hover {
+  background-color: #65c971;
+}
+.default-color:enabled:hover::after {
+  background-color: #65c971;
+}
+.default-color:enabled:active {
+  background-color: #65c971;
+}
+.status-tile {
+  margin: 2rem;
+  color: transparent;
+}
+.react-calendar__tile .future-tile {
+  background-color: #282c34;
+}
+.future-tile {
+  background-color: #d9d9d9;
+  color: transparent;
+}
+.future-tile:enabled:hover {
+  background-color: #d9d9d9;
+  color: transparent;
+}
+.react-calendar .react-calendar__navigation button {
+  /* display: none; */
+  text-align: left;
+  font-weight: bold;
+  font-size: 1rem;
+  /* background-color: yellow; */
+}
+.react-calendar .react-calendar__navigation .react-calendar__navigation__arrow {
+  display: none;
+}
+.status-tile-hover {
+  background-color: initial !important;
+}
+
+.status-tile-hover:hover {
+  background-color: initial !important;
+}
+.react-calendar__navigation {
+  /* height: 100%; */
+}
+/* .operational {
+  background-color: grey;
+} */
+/* .degraded {
+  background-color: orange;
+}  */
+.react-calendar__tile {
+  margin: 1rem;
+  padding: 0.5rem;
+  /* background-color: #65c971; */
+}
+/* .react-calendar__tile :hover {
+  background-color: initial;
+} */
+.react-calendar__month-view {
+  /* display: grid; 
+  grid-template-columns: repeat(7, 1fr);
+ gap: 10px; */
+}
+.status-tile:hover {
+  /* Add any hover styles you want */
+  /* For example, you can add a border or change the opacity */
+}
+
+.status-tile-blue:hover {
+  background-color: blue;
+}
+
+.status-tile-orange:hover {
+  background-color: orange;
+}
+
+.status-tile-red:hover {
+  background-color: red;
+}
+
+.status-tile-darkred:hover {
+  background-color: darkred;
+}
+
+.status-tile-green:hover {
+  background-color: green;
+}
+
+/* .react-calendar button {
+  margin: "2px" !important;
+} */
+.react-calendar__month-view__days {
+  /* border: 2px solid blue; */
+  height: 270px;
+  margin: 0 0;
+  /* padding-top: 1rem; */
+  /* display: grid;
+  grid-template-columns: repeat(7, 1fr); */
+  /* gap: 5px; */
+}
+.react-calendar__month-view {
+  /* border: 2px solid yellow; */
+  /* width: 400px; */
+}
+.react-calendar__month-view .react-calendar__tile {
+  /* margin: 0.6px; */
+  /* margin: 5px; */
+  /* box-sizing: border-box; */
+  /* width: calc((100% - 2px) / 7); */
+  border: 4px solid white;
+  /* margin: 1px; */
+  padding: 10px;
+  /* margin: 2px; */
+  /* width: 100%; */
+}
+/* .react-calendar__month-view__days {
+  display: grid !important;
+  grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+
+  max-width: initial !important;
+} */
+.react-calendar__tile {
+  /* max-width: initial !important; */
+  /* margin: 2px; */
+}
+/* .calendar-navigation {
+  border: 2px solid red;
+} */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (min-width: 1128px) {
+  .react-calendar {
+    /* background-color: red; */
+    height: 310px;
+    border: 0;
+    width: 85%;
+  }
+  .react-calendar__month-view .react-calendar__tile {
+    border: 6px solid white;
+  }
+}
